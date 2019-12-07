@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">HexAlertDialog</string>
+    <string name="positive_image_button">positive_image_button</string>
+    <string name="negative_image_button">negative_image_button</string>
+</resources>

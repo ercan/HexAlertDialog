@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AlertDialogStyle" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+    </style>
+
+    <style name="BottomToTopTheme" parent="AlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/BottomToTopThemeAnim</item>
+    </style>
+
+    <style name="BottomToTopThemeAnim">
+        <item name="android:windowEnterAnimation">@anim/bottom_to_top_enter</item>
+        <item name="android:windowExitAnimation">@anim/bottom_to_top_exit</item>
+    </style>
+
+    <style name="TopToBottomTheme" parent="AlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/TopToBottomThemeAnim</item>
+    </style>
+
+    <style name="TopToBottomThemeAnim">
+        <item name="android:windowEnterAnimation">@anim/top_to_bottom_enter</item>
+        <item name="android:windowExitAnimation">@anim/top_to_bottom_exit</item>
+    </style>
+
+    <style name="LeftToRightTheme" parent="AlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/LeftToRightThemeAnim</item>
+    </style>
+
+    <style name="LeftToRightThemeAnim">
+        <item name="android:windowEnterAnimation">@anim/left_to_right_enter</item>
+        <item name="android:windowExitAnimation">@anim/left_to_right_exit</item>
+    </style>
+
+    <style name="RightToLeftTheme" parent="AlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/RightToLeftThemeAnim</item>
+    </style>
+
+    <style name="RightToLeftThemeAnim">
+        <item name="android:windowEnterAnimation">@anim/right_to_left_enter</item>
+        <item name="android:windowExitAnimation">@anim/right_to_left_exit</item>
+    </style>
+
+    <style name="TransparentToOpaqueTheme" parent="AlertDialogStyle">
+        <item name="android:windowAnimationStyle">@style/TransparentToOpaqueThemeAnim</item>
+    </style>
+
+    <style name="TransparentToOpaqueThemeAnim">
+        <item name="android:windowEnterAnimation">@anim/transparent_to_opaque_enter</item>
+        <item name="android:windowExitAnimation">@anim/transparent_to_opaque_exit</item>
+    </style>
+
+    <style name="KruxDialogSelectableItemTheme">
+        <item name="android:colorControlHighlight">@color/gray</item>
+    </style>
+
+    <style name="KruxDialogSelectableItemBackground" >
+        <item name="android:theme">@style/KruxDialogSelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+</resources>
