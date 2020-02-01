@@ -47,7 +47,7 @@ class HexAlertDialog(private val context: Context) {
 
     var textGravity: Int = Gravity.CENTER
     var position: Int = Gravity.CENTER
-    var animation: Animation = Animation.LEFT_TO_RIGHT
+    var animation: Animation = Animation.TRANSPARENT_TO_OPAQUE
 
     // Click event for the positive and negative buttons. If these events are not defined,
     // then the positive and negative buttons will be invisible (View.GONE)
