@@ -1,115 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        app:cardUseCompatPadding="true"
-        app:cardCornerRadius="7dp"
-        app:cardElevation="1dp">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/dialogCardVw"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="7dp"
+    app:cardUseCompatPadding="true">
 
     <LinearLayout
-            android:id="@+id/containerLayout"
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleTw"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-        <TextView
-                android:id="@+id/titleTw"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/dark_blue"
-                android:paddingTop="10dp"
-                android:paddingBottom="10dp"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:gravity="center"
-                android:text="TITLE"
-                android:textColor="@color/white"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+            android:background="@color/dark_blue"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="10dp"
+            android:text="TITLE"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
 
         <View
-                android:id="@+id/titleDivider"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"/>
+            android:id="@+id/titleDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
 
         <TextView
-                android:id="@+id/messageTw"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/dark_blue"
-                android:paddingStart="20dp"
-                android:paddingEnd="20dp"
-                android:paddingTop="20dp"
-                android:paddingBottom="20dp"
-                android:gravity="center"
-                android:text="Message"
-                android:textColor="@color/white"
-                android:textSize="16sp" />
+            android:id="@+id/messageTw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_blue"
+            android:gravity="center"
+            android:paddingStart="20dp"
+            android:paddingTop="20dp"
+            android:paddingEnd="20dp"
+            android:paddingBottom="20dp"
+            android:text="Message"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
 
         <LinearLayout
-                android:id="@+id/buttonContainer"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:orientation="horizontal">
+            android:id="@+id/buttonContainer"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
 
             <LinearLayout
-                    android:id="@+id/negativeBtnContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_weight="1"
-                    android:background="@color/dark_blue_2">
+                android:id="@+id/negativeBtnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/dark_blue_2"
+                android:orientation="horizontal">
 
                 <Button
-                        android:id="@+id/negativeBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp"
-                        android:text="Negative Button"
-                        android:textColor="@color/red"
-                        android:textSize="17sp"
-                        android:textAllCaps="false"
-                        android:background="?attr/selectableItemBackground"/>
+                    android:id="@+id/negativeBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:text="Negative Button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/red"
+                    android:textSize="17sp" />
 
                 <ImageButton
-                        android:id="@+id/negativeImageBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?attr/selectableItemBackground"
-                        android:contentDescription="@string/negative_image_button" />
+                    android:id="@+id/negativeImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/negative_image_button" />
             </LinearLayout>
 
             <View
-                    android:id="@+id/buttonDivider"
-                    android:layout_width="1dp"
-                    android:layout_height="match_parent" />
+                android:id="@+id/buttonDivider"
+                android:layout_width="1dp"
+                android:layout_height="match_parent" />
 
             <LinearLayout
-                    android:id="@+id/positiveBtnContainer"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:layout_weight="1"
-                    android:background="@color/dark_blue_2">
+                android:id="@+id/positiveBtnContainer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/dark_blue_2"
+                android:orientation="horizontal">
 
                 <Button
-                        android:id="@+id/positiveBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:padding="10dp"
-                        android:text="Positive Button"
-                        android:textColor="@color/green"
-                        android:textSize="17sp"
-                        android:textAllCaps="false"
-                        android:background="?attr/selectableItemBackground"/>
+                    android:id="@+id/positiveBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:padding="10dp"
+                    android:text="Positive Button"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green"
+                    android:textSize="17sp" />
 
                 <ImageButton
-                        android:id="@+id/positiveImageBtn"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="?attr/selectableItemBackground"
-                        android:contentDescription="@string/positive_image_button" />
+                    android:id="@+id/positiveImageBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="?attr/selectableItemBackground"
+                    android:contentDescription="@string/positive_image_button" />
             </LinearLayout>
 
         </LinearLayout>

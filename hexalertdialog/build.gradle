@@ -12,7 +12,7 @@ ext {
 
     publishedGroupId = "com.ercan.hexalertdialog"
     artifact = "hexalertdialog"
-    libraryVersion = "1.0"
+    libraryVersion = "1.1"
 
     libraryDescription = "HexAlertDialog is an alert dialog library that will help you to create almost fully customized alert dialogs."
     siteUrl = "https://github.com/ercan/HexAlertDialog"
@@ -33,9 +33,8 @@ android {
     compileSdkVersion 29
     buildToolsVersion "29.0.2"
 
-
     defaultConfig {
-        minSdkVersion 21
+        minSdkVersion 19
         targetSdkVersion 29
         versionCode 1
         versionName "1.0"
@@ -64,10 +63,10 @@ if(project.rootProject.file('local.properties').exists()){
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.3.61'
     implementation 'androidx.appcompat:appcompat:1.1.0'
     implementation 'androidx.core:core-ktx:1.1.0'
-    testImplementation 'junit:junit:4.12'
+    testImplementation 'junit:junit:4.13'
 
     implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
